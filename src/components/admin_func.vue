@@ -17,7 +17,8 @@ export default {
     data(){
         return{
             show:true,
-            showClass:'function_section'
+            showClass:'function_section' 
+            
         }
     },
     methods:{

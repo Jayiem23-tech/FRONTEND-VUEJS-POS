@@ -4,8 +4,7 @@ import VueResource from 'vue-resource'
 import VueRouter from 'vue-router'
 import Admin from './admin.vue'
 import Mainform from './Mainform.vue' 
-import numeral from 'numeral' 
- 
+import numeral from 'numeral'  
 
 Vue.use(VueRouter)
 Vue.config.productionTip = false

@@ -1,12 +1,12 @@
 <template>
 <div class="container">
      <div class="top">
-            <button  @click="burgerBarToogle(true)" v-if="show == false">
+            <!-- <button  @click="burgerBarToogle(true)" v-if="show == false">
                 <i class="fa fa-bars" aria-hidden="true"  style="font-size:30px;" ></i>
             </button> 
             <button  @click="burgerBarToogle(false)" v-else>
                 <i class="fa fa-close" aria-hidden="true"  style="font-size:30px;" ></i>
-            </button> 
+            </button>  -->
         <h2>Simple Online Point of Sale System</h2> 
         <div class="gotoPos"> 
             <ul>
