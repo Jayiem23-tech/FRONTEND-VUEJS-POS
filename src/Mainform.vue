@@ -21,9 +21,7 @@
         <div class='right'>
             <TransOrders v-on:sendforComputation = "getTotalsForComputation($event)" v-on:SetTransNo = "getTransactionNo($event)" />
         </div> 
-        
-       
-
+        <h1>Not available in Mobile / Tablet size </h1> 
     </div>
 </template>
 <script>
@@ -115,8 +113,16 @@ export default {
         border-right:1px solid #4A4A4A;
         padding: 0 10px;
     }
-    /* .admin_section .right{
-        background-color:#4A4A4A;
-    } */
+    h1{
+        display:none;
+    }
+     @media (max-width:1000px) {
+         .admin_section_payment  .isPaymentStyle ,.admin_section_trans .left , .admin_section_trans .container , .right{
+             display:none;
+         }
+        h1{
+            display:block;
+        }
+     }
 
 </style>

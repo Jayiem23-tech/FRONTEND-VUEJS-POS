@@ -1,12 +1,6 @@
 <template>
 <div class="container">
-     <div class="top">
-            <!-- <button  @click="burgerBarToogle(true)" v-if="show == false">
-                <i class="fa fa-bars" aria-hidden="true"  style="font-size:30px;" ></i>
-            </button> 
-            <button  @click="burgerBarToogle(false)" v-else>
-                <i class="fa fa-close" aria-hidden="true"  style="font-size:30px;" ></i>
-            </button>  -->
+     <div class="top"> 
         <h2>Simple Online Point of Sale System</h2> 
         <div class="gotoPos"> 
             <ul>
@@ -14,14 +8,17 @@
             </ul>
         </div>
     </div> 
+     
     <div class="admin_section"> 
         <div class='left'>
             <Adminfunc @update_page = "changePage"/>
         </div> 
         <div class='main'>
             <component v-bind:is="component" />  
-        </div> 
+        </div>  
+        <h1>Not available in Mobile / Tablet size </h1>
     </div>
+    
     <FooterContainer />
 </div> 
 </template>
@@ -71,8 +68,9 @@ export default {
          text-decoration: none;
      }
     .admin_section{  
-        height: 100vh; 
-        display:flex;
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 14vw 85vw;
     }
     .admin_section .left {
         background-color:#f1f1f1;  
@@ -98,4 +96,22 @@ export default {
         background-color:#fff;  
         padding:5px 10px; 
     } 
+    .admin_section h1{
+        display:none;
+    }
+    
+    @media (max-width:910px) {
+        .admin_section{  
+            height: 100vh;
+            display: grid;
+            grid-template-columns: 100vw;
+            align-items: center; 
+        }
+        .admin_section .main , .admin_section .left{  
+           display:none;
+        } 
+        .admin_section h1{
+            display:grid;
+        }
+    }
 </style>

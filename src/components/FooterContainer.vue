@@ -8,7 +8,7 @@
                             </ul>
                         </div>
             <div>
-                <p>email:johnmark.romero23@gmail.com<br><br>
+                <p>email:johnmarkromero.dev@gmail.com<br><br>
                     Contact : 09750967249</p>
             </div>
             <br><br>

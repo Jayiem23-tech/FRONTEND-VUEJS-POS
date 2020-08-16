@@ -63,25 +63,17 @@ export default {
         --secondary :#707070;
     } 
     .function_section{ 
-        width:0%;
+        width:14vw;
         font-family: Verdana,sans-serif;
         font-size: 20px;
-        line-height: 1.5;  
-        transition: width 2s;
-    } 
-    .function_section_toggle{ 
-        width:0;   
-    } 
+        line-height: 1.5;   
+    }  
     .function_section .content{
         color:#000;   
         height: 100vh;  
     }
-    .function_section .content ul{
-        display:grid; 
-        grid-template-rows:1fr;
-        align-content: center;  
-    }
-    .function_section .content ul li,.function_section .content ul li{
+    
+    .function_section .content ul li{
         display:flex;
         justify-content:center;
         align-items: center; 
