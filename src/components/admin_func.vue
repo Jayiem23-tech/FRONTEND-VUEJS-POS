@@ -1,7 +1,7 @@
 <template>
     <div :class="NavToogle()"> 
         <div class="content"> 
-            <ul :class="showClass">  
+            <ul class="show">  
                 <li v-on:click="page('CompanyContainer')">Company</li>
                 <li v-on:click="page('UsersContainer')">Users</li>
                 <li v-on:click="page('ProductsList')">Products </li>
@@ -18,7 +18,6 @@ export default {
         return{
             show:true,
             showClass:'function_section' 
-            
         }
     },
     methods:{
@@ -42,16 +41,14 @@ export default {
                   return this.showClass = ""
               }
         });
-    }
-    
+    } 
 }
 </script>
 <style scoped>
      *{
         box-sizing:border-box;
         padding:0px;
-        margin:0px;
-        
+        margin:0px; 
     }
     ul{
         list-style:none;
