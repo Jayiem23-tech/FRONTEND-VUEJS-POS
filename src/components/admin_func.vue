@@ -16,7 +16,7 @@ import {bus} from '../main.js'
 export default {
     data(){
         return{
-            show:false,
+            show:true,
             showClass:'function_section'
         }
     },
